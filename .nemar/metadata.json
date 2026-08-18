@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Mainsah et al. 2025 — bigP3BCI: An Open, Diverse and Machine Learning Ready P300-based Brain-Computer Interface Dataset (Study J)",
-  "description": "BigP3BCI Study J is a P300-based brain-computer interface dataset comprising EEG recordings from 20 healthy subjects performing a 9x8 character grid speller task. This derivative dataset is part of the larger BigP3BCI collection, the largest public P300 BCI dataset with ~267 subjects across 20 studies. The data were acquired at 256 Hz using 16-channel EEG with a g.USBamp amplifier and include target and non-target visual stimulus classifications suitable for machine learning applications.",
-  "methods_description": "EEG data were acquired at 256 Hz sampling rate using 16 channels arranged in a standard 10-20 montage with a g.USBamp (g.tec) amplifier. Subjects performed a performance-based row-column P300 speller paradigm on a 9x8 character grid. One session per subject was conducted. Line frequency was 60 Hz. Feature extraction employed P300 event-related potential detection methods.",
+  "description": "BigP3BCI Study J is a P300-based brain-computer interface dataset comprising EEG recordings from 20 healthy subjects performing a 9x8 character grid speller task. This dataset is part of the larger BigP3BCI collection, the largest public P300 BCI dataset with approximately 267 subjects across 20 studies. The data were acquired at 256 Hz using 16 EEG channels and are organized in BIDS format with HED event annotations, making them suitable for machine learning and BCI algorithm development.",
+  "methods_description": "EEG data were acquired from 20 healthy subjects at a sampling rate of 256 Hz using 16 channels arranged in a standard 10-20 montage. Recordings were obtained using g.USBamp hardware (g.tec) with a 60 Hz line frequency. Subjects performed a single session of a P300 speller task using a 9x8 character grid with row-column stimulus presentation. Target and non-target visual stimuli were presented with event intervals spanning 0 to 1.0 seconds.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,28 +22,37 @@
   },
   "keywords": [
     {
-      "term": "EEG"
-    },
-    {
-      "term": "P300"
+      "term": "Evoked Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018981"
     },
     {
       "term": "brain-computer interface"
     },
     {
-      "term": "speller paradigm"
+      "term": "EEG"
     },
     {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+      "term": "event-related potential"
+    },
+    {
+      "term": "speller paradigm"
     },
     {
       "term": "visual perception"
     },
     {
       "term": "machine learning"
+    },
+    {
+      "term": "BCI"
+    },
+    {
+      "term": "HED"
+    },
+    {
+      "term": "row-column paradigm"
     }
   ],
   "related_identifiers": [
@@ -90,5 +99,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "3108e12f597e014b65d2fe61ef7671120142d6d32e71bbcfc5e8135710143753"
+  "source_hash": "c98d90e0db3af18100db5a8c66ea5a69e318287c136695ba31126e5e8bf304c9"
 }
